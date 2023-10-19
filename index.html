@@ -20,23 +20,15 @@
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div class="relative flex items-center justify-between h-16">
             <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-              <!-- Mobile menu button-->
+
               <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
                 <span class="absolute -inset-0.5"></span>
                 <span class="sr-only">Open main menu</span>
-                <!--
-                  Icon when menu is closed.
-      
-                  Menu open: "hidden", Menu closed: "block"
-                -->
+                
                 <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
                 </svg>
-                <!--
-                  Icon when menu is open.
-      
-                  Menu open: "block", Menu closed: "hidden"
-                -->
+                
                 <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
                 </svg>
@@ -45,7 +37,6 @@
             <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
               <div class="hidden sm:ml-6 sm:block">
                 <div class="flex space-x-4">
-                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                   <a href="#" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Home</a>
                   <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-2 py-1 text-sm font-medium">About</a>
                   <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-2 py-1 text-sm font-medium">Projects</a>
@@ -62,7 +53,6 @@
                 </svg>
               </button>
       
-              <!-- Profile dropdown -->
               <div class="relative ml-3">
                 <div>
                   <button type="button" class="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
@@ -97,8 +87,8 @@
     </div>
 
     <div class="flex-auto text-cyan-50 mt-14 pl-10 bg-gray-800 flex-wrap font-serif ml-5 mr-5 mb-5 rounded-xl">
-      <div>
-        <h2 class="text-xl mb-3 pt-2 font-semibold">About Me</h2>
+      <div class="shadow-sm shadow-gray-500 mb-2 pl-5 pb-2">
+        <h2 class="text-xl text-yellow-200 mb-3 pt-2 font-semibold">About Me</h2>
             <p class="text-sm">High National Diploma in Accounting,</p> 
             <p class="text-sm">Front-End Developer</p>
             <p class="text-sm">Member of National Institute of Safety Professional,</p> 
@@ -106,20 +96,19 @@
       </div>
       <div>
         <section id="projects" class=" w-full shadow-sm shadow-gray-500 p-5 mt-5">
-          <div class="container mx-auto w-100">
-              <h2 class="text-xl font-bold ml-1">Projects</h2>
-              <!-- Example project card -->
-              <div class="bg-slate-300 p-1  ml-20 mr-20 mt-4">
-                  <div class="mt-4 border-r-8 border-s-8">
-                      <a href="https://github.com/fabiyis/TO-DO-LIST3/pulls" class="text-blue-500">GitHub</a>
-                      <a href="http://127.0.0.1:5500/index.HTML" class="text-blue-500 ml-4">Live Preview</a>
+          <div class="container mx-auto w-100 mb-2">
+              <h2 class="text-xl font-bold ml-1 text-yellow-200">Projects</h2>
+              <div class="ml-20 mr-20 mt-4">
+                  <div class="mt-4">
+                      <a href="https://github.com/fabiyis/TO-DO-LIST3/pulls" class="text-white hover:bg-gray-700">GitHub</a>
+                      <a href="http://127.0.0.1:5500/index.HTML" class="text-white ml-4  hover:bg-gray-700">Live Preview</a>
                   </div>
               </div>
           </div>
         </section>
       </div>
       <section id="contact" class="p-5 w-full shadow-sm shadow-red-50 mt-3">
-            <h2 class="text-xl text-gray-100 font-semibold mb-1">Contact Me</h2>
+            <h2 class="text-xl text-yellow-200 font-semibold mb-1">Contact Me</h2>
             <form id="contact-form" class="mt-4 ml-20 mr-20">
                 <div class="mb-3">
                     <input type="text" class="w-full bg-slate-300 px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" id="name" placeholder="Your Name">
@@ -135,7 +124,7 @@
         </div>
     </section>
     </div>
-    <footer class="bg-gray-800 text-white text-center py-4">
+    <footer class="bg-gray-800 text-yellow-200 text-center text-xs mr-3 ml-3 py-4">
       <div class="container mx-auto">
           &copy; 2023 "https://github.com/fabiyis" Segun Fabiyi, All rights reserved.
       </div>
