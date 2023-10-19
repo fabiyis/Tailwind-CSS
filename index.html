@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/dist/output.css" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
     <title>Tailwind CSS</title>
     <script src="https://cdn.Tailwindcss.com"></script>
     <style type="text/tailwindcss">
@@ -46,9 +47,9 @@
                 <div class="flex space-x-4">
                   <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                   <a href="#" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Home</a>
-                  <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">About</a>
-                  <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Projects</a>
-                  <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Contact</a>
+                  <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-2 py-1 text-sm font-medium">About</a>
+                  <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-2 py-1 text-sm font-medium">Projects</a>
+                  <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-2 py-1 text-sm font-medium">Contact</a>
                 </div>
               </div>
             </div>
@@ -67,7 +68,7 @@
                   <button type="button" class="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
                     <span class="absolute -inset-1.5"></span>
                     <span class="sr-only">Open user menu</span>
-                    <img class="h-8 w-8 rounded-full" src="image/2020_06_22_20_07_IMG_0668.PNG" alt="">
+                    <img class="h-8 w-8 rounded-full" src="image/segz.JPG" alt="">
                   </button>
                 </div>
               </div>
@@ -83,57 +84,62 @@
           </div>
         </div>
       </nav>
-      <section id="home" class="py-5">s
-        <div class="container mx-auto text-center bg-sky-100">
-            <h1 class="text-4xl font-bold">Segun Emmanuel Fabiyi</h1>
-            <p class="text-lg">Front-end Developer</p>
-            <!-- Optional image of yourself -->
-            <img src="image/segz.JPG" alt="Your Image" class="mx-auto mt-4 rounded-full" width="200">
-        </div>
-    </section>
-    <section id="about" class="py-5">
-        <div class="container mx-auto">
-            <h2 class="text-2xl font-semibold">About Me</h2>
+    
+    <div class="mt-5 flex items-center px-5 ">
+      <div class="h-[200px] w-[200px] bg-gray-500 absolute mt-10 mr-2 border-s-4 shadow-slate-300 rounded-full">
+         <img src="image/segz.JPG" alt="" class="h-32 border-s-4 w-32 mb-5 absolute -bottom-5 -right-5 rounded-xl">
+      </div>
+      <div class=" items-center ml-60">
+        <h2 class="pl-10 pt-20 text-sm font-mono font">Hello, I am</h2>
+        <h1 class="pl-10 text-left text-lg font-bold">Segun Emmanuel Fabiyi</h1>
+        <h3 class="pl-10 font-mono">Frontend Web Developer.</h3>
+      </div>
+    </div>
+
+    <div class="flex-auto text-cyan-50 mt-14 pl-10 bg-gray-800 flex-wrap font-serif ml-5 mr-5 mb-5 rounded-xl">
+      <div>
+        <h2 class="text-xl mb-3 pt-2 font-semibold">About Me</h2>
             <p class="text-sm">High National Diploma in Accounting,</p> 
-            <p class="text-sm">Member of National Institute of Safety professional,</p> 
+            <p class="text-sm">Front-End Developer</p>
+            <p class="text-sm">Member of National Institute of Safety Professional,</p> 
             <p class="text-sm">Certified BOSIET Trainee.</p>
-        </div>
-    </section>
-    <section id="projects" class="py-5">
-        <div class="container mx-auto">
-            <h2 class="text-2xl font-semibold">Projects</h2>
-            <!-- Example project card -->
-            <div class="mb-3">
-                <img src="image/rock pap sci.jpg" class="w-3/12" alt="Project Screenshot">
-                <div class="p-4">
-                    <h5 class="text-x font-semibold">Rock-Paper-Scissors-Game</h5>
-                    <p class="text-gray-600">Com vs User Game</p>
-                    <a href="https://github.com/fabiyis/Rock-Paper-Scissors-Game2/pull/1" class="inline-block mt-2 px-4 py-2 bg-indigo-500 text-white rounded-md">View Project</a>
+      </div>
+      <div>
+        <section id="projects" class=" w-full shadow-sm shadow-gray-500 p-5 mt-5">
+          <div class="container mx-auto w-100">
+              <h2 class="text-xl font-bold ml-1">Projects</h2>
+              <!-- Example project card -->
+              <div class="bg-slate-300 p-1  ml-20 mr-20 mt-4">
+                  <div class="mt-4 border-r-8 border-s-8">
+                      <a href="https://github.com/fabiyis/TO-DO-LIST3/pulls" class="text-blue-500">GitHub</a>
+                      <a href="http://127.0.0.1:5500/index.HTML" class="text-blue-500 ml-4">Live Preview</a>
+                  </div>
+              </div>
+          </div>
+        </section>
+      </div>
+      <section id="contact" class="p-5 w-full shadow-sm shadow-red-50 mt-3">
+            <h2 class="text-xl text-gray-100 font-semibold mb-1">Contact Me</h2>
+            <form id="contact-form" class="mt-4 ml-20 mr-20">
+                <div class="mb-3">
+                    <input type="text" class="w-full bg-slate-300 px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" id="name" placeholder="Your Name">
                 </div>
-            </div>
-        </div>
-    </section>
-    <!-- Contact Section -->
-    <section id="contact" class="py-5">
-        <div class="container mx-auto">
-            <h2 class="text-2xl font-semibold">Contact Me</h2>
-            <form id="contact-form" class="mt-4">
-                <div class="mb-4">
-                    <input type="text" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" id="name" placeholder="Your Name">
+                <div class="mb-3">
+                    <input type="email" class="w-full bg-slate-300 px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" id="email" placeholder="Your Email">
                 </div>
-                <div class="mb-4">
-                    <input type="email" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" id="email" placeholder="Your Email">
+                <div class="mb-3">
+                    <textarea class="w-full px-4 py-2 bg-slate-300 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" id="message" rows="4" placeholder="Your Message"></textarea>
                 </div>
-                <div class="mb-4">
-                    <textarea class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" id="message" rows="4" placeholder="Your Message"></textarea>
-                </div>
-                <button type="submit" class="px-4 py-2 bg-indigo-500 text-white rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500">Send Message</button>
+                <button type="submit" class="px-4 py-2 bg-gray-400 text-white font-bold rounded-md hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500">Send Message</button>
             </form>
         </div>
     </section>
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white text-center py-3">
-        &copy; 2023 Segun. All rights reserved.
+    </div>
+    <footer class="bg-gray-800 text-white text-center py-4">
+      <div class="container mx-auto">
+          &copy; 2023 "https://github.com/fabiyis" Segun Fabiyi, All rights reserved.
+      </div>
     </footer>
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
 </body>
 </html>
