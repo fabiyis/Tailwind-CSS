@@ -88,18 +88,37 @@
 
     <div class="flex-auto text-cyan-50 mt-14 pl-10 bg-gray-800 flex-wrap font-serif ml-5 mr-5 mb-5 rounded-xl">
       <div class="shadow-sm shadow-gray-500 mb-2 pl-5 pb-2">
-        <h2 class="text-xl text-yellow-200 mb-3 pt-2 font-semibold">About Me</h2>
-            <p class="text-sm">High National Diploma in Accounting,</p> 
-            <p class="text-sm">Front-End Developer</p>
-            <p class="text-sm">Member of National Institute of Safety Professional,</p> 
-            <p class="text-sm">Certified BOSIET Trainee.</p>
+        <h2 class="text-xl text-yellow-200 mb-3 pt-2 font-semibold underline">About Me</h2>
+            <p class="text-sm flex">
+              <svg class="w-4 h-5 mr-1 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 20">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 17V2a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a2 2 0 0 0-2 2Zm0 0a2 2 0 0 0 2 2h12M5 15V1m8 18v-4"/>
+              </svg> High National Diploma in Accounting,</p> 
+
+            <p class="text-sm flex mt-1">
+              <svg class="w-4 h-5 mr-1 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+               <path d="M14 15a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/>
+               <path d="M18 5h-8a2 2 0 0 0-2 2v11H5a1 1 0 0 0 0 2h14a1 1 0 0 0 1-1V7a2 2 0 0 0-2-2Zm-4 3a1 1 0 1 1 0 2 1 1 0 0 1 0-2Zm0 9a3 3 0 1 1 0-5.999A3 3 0 0 1 14 17Z"/>
+               <path d="M6 9H2V2h16v1c.65.005 1.289.17 1.86.48A.971.971 0 0 0 20 3V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h4V9Z"/>
+             </svg>Frontend Web Development
+            </p>
+
+            <p class="text-sm flex mt-1">
+              <svg class="w-4 h-5 mr-1 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 20">
+               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 17V2a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a2 2 0 0 0-2 2Zm0 0a2 2 0 0 0 2 2h12M5 15V1m8 18v-4"/>
+              </svg>Member of National Institute of Safety Professional,
+            </p> 
+            <p class="text-sm flex mt-1">
+              <svg class="w-4 h-5 mr-1 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 20">
+               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 17V2a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a2 2 0 0 0-2 2Zm0 0a2 2 0 0 0 2 2h12M5 15V1m8 18v-4"/>
+              </svg>Certified BOSIET Trainee.
+            </p>
       </div>
       <div>
-        <section id="projects" class=" w-full shadow-sm shadow-gray-500 p-5 mt-5">
-          <div class="container mx-auto w-100 mb-2">
-              <h2 class="text-xl font-bold ml-1 text-yellow-200">Projects</h2>
+        <section id="projects" class=" w-full shadow-sm shadow-gray-500 mt-5">
+          <div class="container mx-auto w-100  ml-5">
+              <h2 class="text-xl font-bolds text-yellow-200 underline">Projects</h2>
               <div class="ml-20 mr-20 mt-4">
-                  <div class="mt-4">
+                  <div class="pb-2">
                       <a href="https://github.com/fabiyis/TO-DO-LIST3/pulls" class="text-white hover:bg-gray-700">GitHub</a>
                       <a href="http://127.0.0.1:5500/index.HTML" class="text-white ml-4  hover:bg-gray-700">Live Preview</a>
                   </div>
@@ -107,8 +126,8 @@
           </div>
         </section>
       </div>
-      <section id="contact" class="p-5 w-full shadow-sm shadow-red-50 mt-3">
-            <h2 class="text-xl text-yellow-200 font-semibold mb-1">Contact Me</h2>
+      <section id="contact" class="p-5 w-full shadow-sm shadow-red-50 mt-2">
+            <h2 class="text-xl text-yellow-200 font-semibold mb-1 underline">Contact Me</h2>
             <form id="contact-form" class="mt-4 ml-20 mr-20">
                 <div class="mb-3">
                     <input type="text" class="w-full bg-slate-300 px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" id="name" placeholder="Your Name">
@@ -117,14 +136,14 @@
                     <input type="email" class="w-full bg-slate-300 px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" id="email" placeholder="Your Email">
                 </div>
                 <div class="mb-3">
-                    <textarea class="w-full px-4 py-2 bg-slate-300 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" id="message" rows="4" placeholder="Your Message"></textarea>
+                    <textarea class="w-full px-4 py-2 bg-slate-300 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" id="message" rows="3.5" placeholder="Your Message"></textarea>
                 </div>
                 <button type="submit" class="px-4 py-2 bg-gray-400 text-white font-bold rounded-md hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500">Send Message</button>
             </form>
         </div>
     </section>
     </div>
-    <footer class="bg-gray-800 text-yellow-200 text-center text-xs py-4">
+    <footer class="bg-gray-800 text-yellow-200 text-center text-xs mr-3 ml-3 py-4">
       <div class="container mx-auto">
           &copy; 2023 "https://github.com/fabiyis" Segun Fabiyi, All rights reserved.
       </div>
