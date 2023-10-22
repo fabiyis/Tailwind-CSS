@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/output.css" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+    <title>Tailwind CSS</title>
+    <script src="https://cdn.Tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+    </style>
+</head>
+<body>
+    <nav class="bg-gray-800">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="relative flex items-center justify-between h-16">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+
+              <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                <span class="absolute -inset-0.5"></span>
+                <span class="sr-only">Open main menu</span>
+                
+                <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+                
+                <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+              </button>
+            </div>
+            <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+              <div class="hidden sm:ml-6 sm:block">
+                <div class="flex space-x-4">
+                  <a href="#" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Home</a>
+                  <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-2 py-1 text-sm font-medium">About</a>
+                  <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-2 py-1 text-sm font-medium">Projects</a>
+                  <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-2 py-1 text-sm font-medium">Contact</a>
+                </div>
+              </div>
+            </div>
+            <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+              <button type="button" class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                <span class="absolute -inset-1.5"></span>
+                <span class="sr-only">View notifications</span>
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0"></path>
+                </svg>
+              </button>
+      
+              <div class="relative ml-3">
+                <div>
+                  <button type="button" class="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+                    <span class="absolute -inset-1.5"></span>
+                    <span class="sr-only">Open user menu</span>
+                    <img class="h-8 w-8 rounded-full" src="image/segz.JPG" alt="">
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sm:hidden" id="mobile-menu">
+          <div class="space-y-1 px-2 pb-3 pt-2">
+            <a href="#" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Home</a>
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">About</a>
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Projects</a>
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Contact</a>
+          </div>
+        </div>
+      </nav>
+    
+    <div class="mt-5 flex items-center px-5 ">
+      <div class="h-[200px] w-[200px] bg-gray-500 absolute mt-10 mr-2 border-s-4 shadow-slate-300 rounded-full">
+         <img src="image/segz.JPG" alt="" class="h-32 border-s-4 w-32 mb-5 absolute -bottom-5 -right-5 rounded-xl">
+      </div>
+      <div class=" items-center ml-60">
+        <h2 class="pl-10 pt-20 text-sm font-mono font">Hello, I am</h2>
+        <h1 class="pl-10 text-left text-lg font-bold">Segun Emmanuel Fabiyi</h1>
+        <h3 class="pl-10 font-mono">Frontend Web Developer.</h3>
+      </div>
+    </div>
+
+    <div class="flex-auto text-cyan-50 mt-14 pl-10 bg-gray-800 flex-wrap font-serif ml-5 mr-5 mb-5 rounded-xl">
+      <div class="shadow-sm shadow-gray-500 mb-2 pl-5 pb-2">
+        <h2 class="text-xl text-yellow-200 mb-3 pt-2 font-semibold underline">About Me</h2>
+            <p class="text-sm flex">
+              <svg class="w-4 h-5 mr-1 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 20">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 17V2a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a2 2 0 0 0-2 2Zm0 0a2 2 0 0 0 2 2h12M5 15V1m8 18v-4"/>
+              </svg> High National Diploma in Accounting,</p> 
+
+            <p class="text-sm flex mt-1">
+              <svg class="w-4 h-5 mr-1 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+               <path d="M14 15a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/>
+               <path d="M18 5h-8a2 2 0 0 0-2 2v11H5a1 1 0 0 0 0 2h14a1 1 0 0 0 1-1V7a2 2 0 0 0-2-2Zm-4 3a1 1 0 1 1 0 2 1 1 0 0 1 0-2Zm0 9a3 3 0 1 1 0-5.999A3 3 0 0 1 14 17Z"/>
+               <path d="M6 9H2V2h16v1c.65.005 1.289.17 1.86.48A.971.971 0 0 0 20 3V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h4V9Z"/>
+             </svg>Frontend Web Development
+            </p>
+
+            <p class="text-sm flex mt-1">
+              <svg class="w-4 h-5 mr-1 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 20">
+               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 17V2a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a2 2 0 0 0-2 2Zm0 0a2 2 0 0 0 2 2h12M5 15V1m8 18v-4"/>
+              </svg>Member of National Institute of Safety Professional,
+            </p> 
+            <p class="text-sm flex mt-1">
+              <svg class="w-4 h-5 mr-1 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 20">
+               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 17V2a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a2 2 0 0 0-2 2Zm0 0a2 2 0 0 0 2 2h12M5 15V1m8 18v-4"/>
+              </svg>Certified BOSIET Trainee.
+            </p>
+      </div>
+      <div>
+        <section id="projects" class=" w-full shadow-sm shadow-gray-500 mt-5">
+          <div class="container mx-auto w-100  ml-5">
+              <h2 class="text-xl font-bolds text-yellow-200 underline">Projects</h2>
+              <div class="ml-20 mr-20 mt-4">
+                  <div class="pb-2">
+                      <a href="https://github.com/fabiyis/TO-DO-LIST3/pulls" class="text-white hover:bg-gray-700">GitHub</a>
+                      <a href="http://127.0.0.1:5500/index.HTML" class="text-white ml-4  hover:bg-gray-700">Live Preview</a>
+                  </div>
+              </div>
+          </div>
+        </section>
+      </div>
+      <section id="contact" class="p-5 w-full shadow-sm shadow-red-50 mt-2">
+            <h2 class="text-xl text-yellow-200 font-semibold mb-1 underline">Contact Me</h2>
+            <form id="contact-form" class="mt-4 ml-20 mr-20">
+                <div class="mb-3">
+                    <input type="text" class="w-full bg-slate-300 px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" id="name" placeholder="Your Name">
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="w-full bg-slate-300 px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" id="email" placeholder="Your Email">
+                </div>
+                <div class="mb-3">
+                    <textarea class="w-full px-4 py-2 bg-slate-300 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" id="message" rows="3.5" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="px-4 py-2 bg-gray-400 text-white font-bold rounded-md hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500">Send Message</button>
+            </form>
+        </div>
+    </section>
+    </div>
+    <footer class="bg-gray-800 text-yellow-200 text-center text-xs mr-3 ml-3 py-4">
+      <div class="container mx-auto">
+          &copy; 2023 "https://github.com/fabiyis" Segun Fabiyi, All rights reserved.
+      </div>
+    </footer>
+    
+</body>
+</html>
